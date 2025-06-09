@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  font-family: "Roboto";
+}
+
+img {
+  width: 36px;
+}
+
+body {
+  display: grid;
+  grid-template: 1fr 1fr / 0.2fr 1fr;
+
+  max-height: 100vh;
+}
+
+.sidebarContainer {
+  grid-row: span 2;
+
+  margin: 16px;
+  margin-left: 28px;
+  .titleContainer {
+    display: flex;
+
+    :last-child {
+      margin-left: 16px;
+    }
+  }
+}
