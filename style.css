@@ -3,31 +3,199 @@
   padding: 0;
   list-style-type: none;
 }
-body {
+body * {
   font-family: "Roboto";
 }
-
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 img {
   width: 36px;
+
+  cursor: pointer;
 }
 
-body {
+.mainContainer {
+  height: 100%;
   display: grid;
-  grid-template: 1fr 1fr / 0.2fr 1fr;
-
-  max-height: 100vh;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
 }
 
 .sidebarContainer {
+  background-color: rgb(69, 158, 218);
   grid-row: span 2;
+  grid-column: span 1;
+  /* padding: 16px; */
+  /* padding-left: 28px; */
+  color: white;
 
-  margin: 16px;
-  margin-left: 28px;
+  img {
+    width: 52px;
+  }
+
   .titleContainer {
     display: flex;
+
+    margin: 24px;
 
     :last-child {
       margin-left: 16px;
     }
   }
+  * {
+    text-align: center;
+    align-items: center;
+
+    font-weight: bolder;
+    font-size: 1.9rem;
+  }
+
+  .sidebar {
+    margin-top: 42px;
+    margin-left: 26px;
+  }
+  .sidebar > * {
+    display: flex;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+  }
+  .sidebar img {
+    width: 28px;
+  }
+  .sidebar > * {
+    margin-top: 16px;
+  }
+  .sidebar h3 {
+    font-size: 1.3rem;
+    margin-left: 24px;
+  }
+  .settings {
+    margin-top: 64px;
+  }
+}
+
+header {
+  display: grid;
+  grid-template: 0.1fr 1fr/1fr 1fr;
+
+  .searchBar {
+    grid-column: span 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  img {
+    width: 24px;
+  }
+  .profileIcon {
+    width: 52px;
+    border: rgb(13, 67, 138) 2px solid;
+    border-radius: 50%;
+  }
+  .profileName {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+  .searchBar > * {
+    margin-left: 24px;
+  }
+  .searchBar > input {
+    flex-basis: 70%;
+    background-color: rgb(231, 229, 229);
+    border-radius: 12px;
+    height: 26px;
+    border-style: none;
+
+    margin-right: 12px;
+    padding-left: 12px;
+  }
+}
+.searchIcon {
+  cursor: pointer;
+}
+.userInfo {
+  display: grid;
+  grid-template: 0.5fr 1fr/0.12fr 1fr;
+
+  align-items: center;
+  .bigProfileIcon {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    width: 84px;
+    grid-row: span 2;
+    border: rgb(13, 67, 138) 2px solid;
+    border-radius: 50%;
+  }
+
+  .hiThere {
+    align-self: flex-end;
+    font-size: 0.8rem;
+  }
+  .bigProfileName {
+    /* padding-bottom: 24px; */
+    align-self: flex-start;
+  }
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.actionButtons > button {
+  margin: 12px;
+  font-size: 1.4rem;
+  font-family: "Roboto";
+  background-color: rgb(54, 110, 184);
+
+  cursor: pointer;
+
+  color: white;
+  border-radius: 24px;
+  border-style: none;
+  width: 120px;
+  padding: 8px;
+}
+
+.content {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 0.2fr;
+
+  background-color: rgb(226, 224, 224);
+
+  padding: 24px;
+}
+.content h1 {
+  margin-bottom: 16px;
+}
+.projectsContainer {
+  grid-row: span 2;
+
+  margin-right: 18px;
+}
+.projectsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project {
+  background-color: white;
+  margin: 8px;
+  padding: 16px;
+}
+.announcementsContainer > div,
+.trendingContainer > div {
+  background-color: white;
+  margin: 8px;
+  padding: 16px;
+
+  border-radius: 12px;
 }

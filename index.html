@@ -12,255 +12,287 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="sidebarContainer">
-      <div class="titleContainer">
-        <img src="icons/alpha-a-box.svg" alt="" />
-        <h1 class="title">Dashboard</h1>
+    <div class="mainContainer">
+      <div class="sidebarContainer">
+        <div class="titleContainer">
+          <img src="icons/alpha-a-box.svg" alt="" />
+          <h1 class="title">Dashboard</h1>
+        </div>
+        <nav class="sidebar">
+          <li class="home">
+            <img src="icons/home.svg" alt="" />
+            <h3>Home</h3>
+          </li>
+          <li class="profile">
+            <img src="icons/account.svg" alt="" />
+            <h3>Profile</h3>
+          </li>
+          <li class="messages">
+            <img src="icons/message.svg" alt="" />
+            <h3>Messages</h3>
+          </li>
+          <li class="history">
+            <img src="icons/history.svg" alt="" />
+            <h3>History</h3>
+          </li>
+          <li class="tasks">
+            <img src="icons/tasks.svg" alt="" />
+            <h3>Tasks</h3>
+          </li>
+          <li class="communities">
+            <img src="icons/account-group.svg" alt="" />
+            <h3>Communities</h3>
+          </li>
+          <li class="settings">
+            <img src="icons/cog.svg" alt="" />
+            <h3>Settings</h3>
+          </li>
+          <li class="support">
+            <img src="icons/help-box.svg" alt="" />
+            <h3>Support</h3>
+          </li>
+          <li class="privacy">
+            <img src="icons/shield-check.svg" alt="" />
+            <h3>Privacy</h3>
+          </li>
+        </nav>
       </div>
-      <nav class="sidebar">
-        <li class="home">
-          <img src="icons/home.svg" alt="" />
-          <h3>Home</h3>
-        </li>
-        <li class="profile">
-          <img src="icons/account.svg" alt="" />
-          <h3>Profile</h3>
-        </li>
-        <li class="messages">
-          <img src="icons/message.svg" alt="" />
-          <h3>Messages</h3>
-        </li>
-        <li class="history">
-          <img src="icons/history.svg" alt="" />
-          <h3>History</h3>
-        </li>
-        <li class="tasks">
-          <img src="icons/tasks.svg" alt="" />
-          <h3>Tasks</h3>
-        </li>
-        <li class="communities">
-          <img src="icons/account-group.svg" alt="" />
-          <h3>Communities</h3>
-        </li>
-        <li class="settings">
-          <img src="icons/cog.svg" alt="" />
-          <h3>Settings</h3>
-        </li>
-        <li class="support">
-          <img src="icons/help-box.svg" alt="" />
-          <h3>Support</h3>
-        </li>
-        <li class="privacy">
-          <img src="icons/shield-check.svg" alt="" />
-          <h3>Privacy</h3>
-        </li>
-      </nav>
-    </div>
-    <header class="header">
-      <div class="searchBar">
-        <img class="searchIcon" src="icons/magnify.svg" alt="" />
-        <input type="text" name="" id="" />
-        <img src="icons/bell-ring-outline.svg" alt="" class="alarmIcon" />
-        <img src="icons/profilePic.jpg" alt="" class="profileIcon" />
-        <h1 class="profileName">Morgan Oakley</h1>
-      </div>
-      <div class="userInfo">
-        <img src="icons/profilePic.jpg" alt="" class="bigProfileIcon" />
-        <h6 class="hiThere">Hi There,</h6>
-        <h1 class="bigProfileName">Morgan Oakley (@morgan)</h1>
-      </div>
-      <div class="actionButtons">
-        <button class="new">New</button>
-        <button class="upload">Upload</button>
-        <button class="share">Share</button>
-      </div>
-    </header>
-    <main class="content">
-      <div class="projectsContainer">
-        <h1 class="projectsTitle">Your Projects</h1>
-        <div class="projectsList">
-          <div class="project">
-            <h2 class="projectName">Super Cool Project</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+      <header class="header">
+        <div class="searchBar">
+          <img class="searchIcon" src="icons/magnify.svg" alt="" />
+          <input type="text" name="" id="" />
+          <img src="icons/bell-ring-outline.svg" alt="" class="alarmIcon" />
+          <img src="icons/profilePic.jpg" alt="" class="profileIcon" />
+          <h1 class="profileName">Morgan Oakley</h1>
+        </div>
+        <div class="userInfo">
+          <img src="icons/profilePic.jpg" alt="" class="bigProfileIcon" />
+          <h6 class="hiThere">Hi There,</h6>
+          <h1 class="bigProfileName">Morgan Oakley (@morgan)</h1>
+        </div>
+        <div class="actionButtons">
+          <button class="new">New</button>
+          <button class="upload">Upload</button>
+          <button class="share">Share</button>
+        </div>
+      </header>
+      <main class="content">
+        <div class="projectsContainer">
+          <h1 class="projectsTitle">Your Projects</h1>
+          <div class="projectsList">
+            <div class="project">
+              <h2 class="projectName">Super Cool Project</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="project">
-            <h2 class="projectName">Less Cool Project</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+            <div class="project">
+              <h2 class="projectName">Less Cool Project</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
-          </div>
-          <div class="project">
-            <h2 class="projectName">Impossible App</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+            <div class="project">
+              <h2 class="projectName">Impossible App</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
-          </div>
-          <div class="project">
-            <h2 class="projectName">Easy Peasy App</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+            <div class="project">
+              <h2 class="projectName">Easy Peasy App</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
-          </div>
-          <div class="project">
-            <h2 class="projectName">Ad Blocker</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+            <div class="project">
+              <h2 class="projectName">Ad Blocker</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
-          </div>
-          <div class="project">
-            <h2 class="projectName">Money Maker</h2>
-            <p class="projectInfo">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-              vitae recusandae odit ex itaque atque in labore dolores quibusdam
-            </p>
-            <div class="projectIcons">
-              <img src="icons/star-plus-outline.svg" alt="" class="addToFav" />
-              <img
-                src="icons/eye-plus-outline.svg"
-                alt=""
-                class="addToWatched"
-              />
-              <img
-                src="icons/share-variant-outline.svg"
-                alt=""
-                class="shareProject"
-              />
+            <div class="project">
+              <h2 class="projectName">Money Maker</h2>
+              <p class="projectInfo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                vitae recusandae odit ex itaque atque in labore dolores
+                quibusdam
+              </p>
+              <div class="projectIcons">
+                <img
+                  src="icons/star-plus-outline.svg"
+                  alt=""
+                  class="addToFav"
+                />
+                <img
+                  src="icons/eye-plus-outline.svg"
+                  alt=""
+                  class="addToWatched"
+                />
+                <img
+                  src="icons/share-variant-outline.svg"
+                  alt=""
+                  class="shareProject"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="announcementsContainer">
-        <h1 class="announcementsTitle">Announcements</h1>
-        <div class="announcements">
-          <li>
-            <h3>Site Maintenance</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium at natus laborum aspernatur facere, voluptatum
-            </p>
-          </li>
-          <li>
-            <h3>Community Share Day</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium at natus laborum aspernatur facere, voluptatum
-            </p>
-          </li>
-          <li>
-            <h3>Updated Privacy Policy</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laudantium at natus laborum aspernatur facere, voluptatum
-            </p>
-          </li>
+        <div class="announcementsContainer">
+          <h1 class="announcementsTitle">Announcements</h1>
+          <div class="announcements">
+            <li>
+              <h3>Site Maintenance</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laudantium at natus laborum aspernatur facere, voluptatum
+              </p>
+            </li>
+            <li>
+              <h3>Community Share Day</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laudantium at natus laborum aspernatur facere, voluptatum
+              </p>
+            </li>
+            <li>
+              <h3>Updated Privacy Policy</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laudantium at natus laborum aspernatur facere, voluptatum
+              </p>
+            </li>
+          </div>
         </div>
-      </div>
-      <div class="trendingContainer">
-        <h3 class="trendingTitle">Trending</h3>
-        <div class="trendings">
-          <li class="trendyItem">
-            <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
-            <div class="trendyInfo">
-              <h6 class="trendyAuthorName">@tegan</h6>
-              <h6 class="trendyAppTitle">World Peace Builder</h6>
-            </div>
-          </li>
-          <li class="trendyItem">
-            <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
-            <div class="trendyInfo">
-              <h6 class="trendyAuthorName">@morgan</h6>
-              <h6 class="trendyAppTitle">Super Cool Project</h6>
-            </div>
-          </li>
-          <li class="trendyItem">
-            <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
-            <div class="trendyInfo">
-              <h6 class="trendyAuthorName">@kendall</h6>
-              <h6 class="trendyAppTitle">Life Changing App</h6>
-            </div>
-          </li>
-          <li class="trendyItem">
-            <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
-            <div class="trendyInfo">
-              <h6 class="trendyAuthorName">@alex</h6>
-              <h6 class="trendyAppTitle">No Traffic Maker</h6>
-            </div>
-          </li>
+        <div class="trendingContainer">
+          <h1 class="trendingTitle">Trending</h1>
+          <div class="trendings">
+            <li class="trendyItem">
+              <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
+              <div class="trendyInfo">
+                <h6 class="trendyAuthorName">@tegan</h6>
+                <h6 class="trendyAppTitle">World Peace Builder</h6>
+              </div>
+            </li>
+            <li class="trendyItem">
+              <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
+              <div class="trendyInfo">
+                <h6 class="trendyAuthorName">@morgan</h6>
+                <h6 class="trendyAppTitle">Super Cool Project</h6>
+              </div>
+            </li>
+            <li class="trendyItem">
+              <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
+              <div class="trendyInfo">
+                <h6 class="trendyAuthorName">@kendall</h6>
+                <h6 class="trendyAppTitle">Life Changing App</h6>
+              </div>
+            </li>
+            <li class="trendyItem">
+              <img class="trendyAuthorPic" src="icons/profilePic.jpg" alt="" />
+              <div class="trendyInfo">
+                <h6 class="trendyAuthorName">@alex</h6>
+                <h6 class="trendyAppTitle">No Traffic Maker</h6>
+              </div>
+            </li>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
