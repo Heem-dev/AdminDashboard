@@ -81,7 +81,7 @@ img {
 
 header {
   display: grid;
-  grid-template: 0.1fr 1fr/1fr 1fr;
+  grid-template: 0.1fr 2fr/1fr 1fr;
 
   .searchBar {
     grid-column: span 2;
@@ -168,7 +168,7 @@ header {
 
 .content {
   display: grid;
-  grid-template: 1fr 1fr/1fr 0.2fr;
+  grid-template: 1fr 1fr/1fr 0.3fr;
 
   background-color: rgb(226, 224, 224);
 
@@ -187,15 +187,67 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 .project {
-  background-color: white;
-  margin: 8px;
-  padding: 16px;
+  background: #eddd53;
+  background: linear-gradient(
+    90deg,
+    rgb(223, 179, 38) 2%,
+    rgba(255, 255, 255, 1) 2%
+  );
+  padding: 24px;
+
+  border-radius: 12px;
+
+  margin: 0 0 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+.projectName {
+  margin-bottom: 8px;
+}
+.projectIcons {
+  display: flex;
+  justify-content: end;
+
+  margin-top: 48px;
+  margin-bottom: 18px;
+  column-gap: 18px;
 }
 .announcementsContainer > div,
 .trendingContainer > div {
   background-color: white;
-  margin: 8px;
   padding: 16px;
 
   border-radius: 12px;
+}
+.announcements > li {
+  margin: 10px;
+  padding: 4px;
+}
+
+.announcements > li:nth-child(2) {
+  border-top: lightgrey solid 2px;
+  border-bottom: lightgrey solid 2px;
+}
+
+.trendingContainer {
+  margin-top: 20px;
+}
+.trendyItem {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  column-gap: 12px;
+  margin: 12px;
+}
+.trendyItem img {
+  width: 64px;
+  border: black solid 2px;
+  border-radius: 50%;
+}
+.trendyInfo * {
+  font-size: 1rem;
+}
+.trendyAppTitle {
+  font-weight: normal;
 }
